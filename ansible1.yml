@@ -6,8 +6,8 @@
   tasks:
     - name: "Install specified python requirements"
       pip:
-      virtualenv: /var/www/html/django
-      requirements: requirement.txt
+      	virtualenv: /var/www/html/django
+     	requirements: requirement.txt
     - name: restart apache
       shell: /usr/local/apache2/bin/apachectl restart
 
