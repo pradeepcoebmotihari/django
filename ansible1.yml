@@ -6,4 +6,6 @@
   tasks:
     - name: install httpd on linux
       action: yum name=wget state=present
+    - name: restart apache
+      shell: /usr/local/apache2/bin/apachectl restart
 
