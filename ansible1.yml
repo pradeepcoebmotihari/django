@@ -8,7 +8,6 @@
       ansible.builtin.pip:
       virtualenv: /var/www/html/django
       virtualenv_command: source .py3env/bin/activate
-      requirements: requirement.txt
     - name: restart apache
       shell: /usr/local/apache2/bin/apachectl restart
 
