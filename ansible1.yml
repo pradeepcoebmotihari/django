@@ -4,8 +4,6 @@
   become: yes
   connection: ssh
   tasks:
-    - name: install httpd on linux
-      action: yum name=wget state=present
     - name: Install specified python requirements
       ansible.builtin.pip:
       virtualenv: /var/www/html/django
