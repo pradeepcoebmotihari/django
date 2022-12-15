@@ -4,10 +4,10 @@
   become: yes
   connection: ssh
   tasks:
-    - name: Install specified python requirements
-      ansible.builtin.pip:
+    - name: "Install specified python requirements"
+      pip:
       virtualenv: /var/www/html/django
-      virtualenv_command: source .py3env/bin/activate
+      requirements: requirement.txt
     - name: restart apache
       shell: /usr/local/apache2/bin/apachectl restart
 
