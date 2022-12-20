@@ -8,6 +8,7 @@
       pip:
           virtualenv: /var/www/html/django/.py3env
           requirements: requirement.txt
+          chdir: /var/www/html/django/project/
     - name: restart apache
       shell: /usr/local/apache2/bin/apachectl restart
 
